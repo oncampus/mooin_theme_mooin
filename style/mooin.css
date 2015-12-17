@@ -1,0 +1,1248 @@
+/* mooin CSS
+-------------------------*/
+
+html {width:100%; height:100%; margin:0px; padding:0px;}
+body {
+	background-color:#fff;
+	margin:0px; padding:0px;
+	width:100%;
+	min-width:320px;
+	font-family: 'Verdana', 'Arial', sans-serif;
+	color:#666;
+	height:100%;
+	border:0px;
+}
+p, ul, ol, li { font-family: 'Verdana', 'Arial', sans-serif; color:#666; font-size:16px; line-height:26px;}
+ul, ol {margin-left:35px;}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Myriad Pro', 'Verdana', Arial, sans-serif;
+	font-weight:normal;
+	color:#666;
+}
+.path-site h1 {font-size:36px; line-height:60px;}
+a, a:link, a:active, a:visited {color:#0070a8; text-decoration:none;}
+a:hover {color:#003d5c;}
+
+.skiplinks, a.skip-block, a.skip {display:none; max-width:200px;}
+
+.oc-zum-course-button a {
+display: block;
+background-color: #30ade7;
+max-width: 280px;
+width:100%;
+height: 47px;
+color: #fff;
+margin-right: auto;
+margin-left: auto;
+font-size: 24px;
+line-height: 45px;
+margin-bottom:30px;
+text-align:center;
+text-decoration:none;
+margin-top:30px;
+}
+.oc-zum-course-button a:hover, .oc-zum-course-button a:active, 
+.oc-zum-course-button a:focus  {
+	text-decoration:none; 
+	background-color:#1a98d1;
+}
+
+
+
+/* Wortbruch raus */
+.block .content {
+	word-wrap:normal;
+}
+.mod_groupselect .edit, .text_to_html, td {
+	word-break:normal !important;
+}
+.generalbox > div.no-overflow {overflow:visible;}
+
+/* ---------------------------------------------------------------------------------- */
+/* Seitenaufbau */
+#mooin-site-wrapper {
+	position:relative;
+	min-height:100%;
+	margin:0px;
+	padding:0px 20px;
+}
+#page {
+	margin:-0px -20px;
+	padding-bottom: 180px;
+
+}
+/* Anpassung Bereiche-Klassen */
+.container-fluid {
+	margin-left:auto;
+	margin-right:auto;
+}
+.container-fluid.oc_contain_layout {
+margin:0px auto; padding:0px; width:100%; max-width:none;
+}
+.oc_inner_layout {
+	margin:0 auto;
+	padding:0px;
+	width:100%;
+}
+.oc_inner_layout .inner_content {width:80%; max-width:1080px;}
+.inner_content{margin-left:auto; margin-right:auto; width:80%; max-width:960px; padding:0px;} /* 90% -> 80 % */
+.oc-inner-content, .oc-block-inside-content {margin-left:auto; margin-right:auto; width:70%; max-width:960px; padding:0px;}
+
+.path-user #region-main, .path-login #region-main, .path-mod-forum #region-main, .path-badges #region-main,
+.forumtype-general #region-main {margin-left:auto; margin-right:auto; width:70%; max-width:960px; padding:0px 0px 0px 30px;}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* Anpassung des Headers */
+.navbar.navbar-static-top {top:0; position:relative; left:0; right:0; width:100%; margin:0px;}
+.navbar-inner, .navbar-static-top .navbar-inner {background-color: #f0f0f0; /* #fafafa */
+	margin:0px -20px;
+    /* background-image: linear-gradient(to bottom, #fff, #f2f2f2); 
+    background-repeat: repeat-x; */
+	border-top:6px solid #d12121; border-left:0px; border-right:0px; border-bottom: 1px solid #d4d4d4;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.067);
+	-moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.067);
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.067);
+	border-radius:0px;
+    min-height: 40px;
+    padding:5px 0px;
+}
+.nav-collapse.collapse {float:right; margin-right:20px;}
+.navbar .nav .dropdown-menu {overflow-y:visible;}
+/* Anpassung Usermenu */
+.jsenabled .usermenu .moodle-actionmenu.show .menu a:hover {background-color:#333;}
+
+#bannertop{width: 100%;	height:6px; background-color:#d12121;}
+#bannerbottom {width:100%; height:6px; background-color:#d12121; padding:0px; margin:0px;}
+a#logo{background: url([[pix:theme|logo300]]) no-repeat 0 0;background-size: 114px 30px; 
+	display: block;	float: left; height: 30px; width: 114px; margin: 5px 0px; padding: 0;}
+
+/* ----------------------------------------------------------------------------------- */
+/* ------ Anpassung der Blockbereiche und Blöcke ------ */
+.block {	border-radius:0px; border-left:0px; border-right:0px; margin-bottom:0px; background-color:#fff; }
+
+#block-region-side-top .block, #block-region-side-post .block, #block-region-side-footer  .block,
+#block-region-content .block {padding:0px; box-shadow:none; border:0px;}
+#block-region-side-top .block .content, #block-region-side-post .block .content, 
+#block-region-side-footer .block .content {padding:0px; width:100%;}
+
+.block_bg {width:100%; margin:0px; padding:0px;}
+.block_bg:before, .block_bg:after {content: ""; display: table; clear: both; visibility: hidden; line-height: 0; height: 0;}
+
+#block-region-side-top .no-overflow {padding:0px; overflow:visible;}
+
+
+/* --------   Block-Region TOP    ---------------- */
+/* Site-Top Hintergründe für Blöcke */
+#teaserblock.block_bg {background:url([[pix:theme|teaserkarte2]]) no-repeat center -40px; padding-top:0px; padding-bottom:0px;}
+#kompassrose {background:url([[pix:theme|teaserkompassrose2]]) no-repeat center 30px; padding-top:20px; padding-bottom:30px;}
+
+#anker_nav{background-color:#30ade7; min-height:65px; padding:0px;}
+#anker_nav li{font-size:22px; line-height:26px;}
+
+/* Site-Top Startseite */
+h1.topheadline {text-align:right; width:45%; min-width:255px; font-size:36px; line-height:45px; margin-bottom:20px;}
+#video {max-width:1080px; width:100%;  margin-right:auto; margin-left:auto; }
+.mooc-video {max-width:840px; width:100%; margin-right:auto; margin-left:auto;}
+
+
+/* Site-Top Sprungnavigation */
+.block #anker_nav .inner_conten {height:50px; padding-top:0px; padding-bottom:0px;}
+#anker_nav ul  {list-style-type:none; margin:0px; font-size: 24px; line-height: 26px; text-align:center;padding:0px;}
+#anker_nav ul li{margin-top:20px; margin-bottom:15px;}
+#anker_nav a, #anker_nav a:link, #anker_nav a:visited, #anker_nav a:active, #anker_nav a:hover {text-decoration:none; color:#fff;}
+#anker_nav a:hover {color:rgb(161,212,225);}
+
+
+/* --------   Block-Region PRE    ------------ */
+#block-region-side-pre .block {float:left; width:25%; margin-right:5%; background-color:#f5f5f5; min-width:235px;}
+#block-region-side-pre {width:95%; margin-left:5%;}
+.admin #block-region-side-pre {width:14%; margin-left:5%;}
+
+.pagelayout-admin #block-region-side-pre .block, .pagelayout-report #block-region-side-pre .block  {
+	float:left; width:100%; margin-left:0px;} 
+
+/* Anpassung 2-Spalten-Layout */
+.pagelayout-admin #block-region-side-pre, .pagelayout-report #block-region-side-pre {
+	float:left;
+	margin-left:0px;
+}
+.pagelayout-admin #region-main, .pagelayout-report #region-main {
+	float:right;
+	margin-left:5px;
+}
+.pagelayout-admin #region-main .mform, .pagelayout-report #region-main .mform{
+	margin-right:20px;
+}	
+	
+/* --------   Block-Region FOOTER  (Block Footer) --------- */
+#page-footer { background-color: #f0f0f0; /* #fafafa */
+	border-top:1px solid #d4d4d4; border-left:0px; border-right:0px; border-bottom:6px solid #d12121;
+	-webkit-box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.067);
+	-moz-box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.067);
+	box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.067);
+	border-radius:0px;
+    padding:20px 0px 5px 0px; margin:10px -20px 0px -20px;
+	position:absolute; width:100%; bottom:0px;
+}
+#block-region-side-footer {
+	position:absolute; margin:20px -20px; 
+	bottom:80px; padding:0px;
+	text-align:left; color:#666;
+}
+@media only screen and ( max-width: 767px ) { 
+	#block-region-side-footer {bottom:230px;}
+	#page {padding-bottom:320px;}
+}
+#page-footer .block, #page-footer .block  .header h2{
+	background-color:transparent; box-shadow:none; padding:0px; border:0px;}
+a#logo-fhl {background: url([[pix:theme|fhl-logo]]) no-repeat center center; background-size: 120px 54px; display: block; 
+	height:54px; width:120px; margin:0px; padding:0px;}
+a#logo-oc {background: url([[pix:theme|oc-logo]]) no-repeat center center; background-size: 200px 54px; display: block; 
+	height:54px; width:200px; margin:0px; padding:0px;}
+#block-region-side-footer a{
+	text-align:left;
+	color:#666;
+}
+.footerlinks {text-align:left; margin-bottom:20px;}
+.footerlinks a {color:#666;}
+.footerlinks a:hover {color:#0070a8;}
+
+
+/* ----------------------------------------------------------------------------- */
+/* ----------  Anpassung CONTENT-Bereich --------- */
+#region-main {font-size:16px; color:#666; line-height:30px;}
+.section .activity.modtype_label.label, .path-site li.activity > div, .path-course-view li.activity > div,
+.section .label .mod-indent-outer, .section .label .contentwithoutlink, .section .label .activityinstance {
+	padding:0px;}
+.pagelayout-frontpage .no-overflow {overflow:visible; padding:0px;}
+.pagelayout-frontpage .sectionname{display:none;}
+
+/* Anpassung Contentaufteilung */
+.oc_row:before, .row:after {content: "."; display: table; clear: both; visibility: hidden; line-height: 0; height: 0;}
+.oc_row {padding:0px; max-width:960px; width:100%; margin: 0 auto; padding: 0; position: relative;}
+.oc_col {float: left; margin-right: 30px; margin-bottom:30px;}
+.oc_col:last-child {margin-right: 0;}
+
+.oc_3_3 {width:100%; max-width:960px; margin-right:auto; margin-left:auto;}
+.oc_full{width:100%; max-width:960px; margin-right:auto; margin-left:auto;}
+
+
+.oc_1_3 {min-width:260px; width:32%; margin-right:2.5%;}
+.oc_2_3 {min-width:520px; width:65.5%; margin-right:0px;}
+.oc_3_3 {width:100%; margin:0px;}
+.oc_full{width:100%; margin:0px;}
+.oc_col:last-child {margin-right: 0;}
+
+@media only screen and ( max-width: 1100px ){
+.oc_1_3 {min-width:260px; width:100%; margin-right:0;}
+.oc_2_3 {min-width:260px; width:100%; margin-right:0px;}
+}
+
+
+/* Content-Inhalte */
+.pagelayout-frontpage h2 {text-align:center;}
+
+/* =========================================== */
+/*    -----------  Login ------------          */
+#page-login-index #region-main, #page-login-index #region-main p {font-size:15px; line-height:22px;}
+#page-login-index #page-content{
+	background:url([[pix:theme|teaserkarte2]]) no-repeat center -40px; 
+	padding-top:10px; padding-bottom:10px;
+	border-bottom: 1px solid #d4d4d4;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.067);
+	-moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.067);
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.067);
+}
+#page-login-index #region-main > div {
+	background-color:#fff; border: 1px solid #d4d4d4;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+}
+.signuppanel p {text-align:center; font-size:16px; line-height:28px;}
+.forgetpass {margin-bottom:20px;}
+.zocial.googleplus { 
+	font-size:16px; line-height:32px;
+	box-shadow:none; border:0 none; border-radius:0px;
+	font-family: 'Myriad Pro', 'Verdana', Arial, sans-serif;
+	font-weight:normal; text-shadow:none; background-image:none;
+	background-color:#dd4b39;
+	min-width: 230px;
+}
+.zocial.googleplus:hover, .zocial.googleplus:focus {
+	background-image:none; background-color:#d2402e;
+}
+.zocial.googleplus:before {width:20px;}
+
+.zocial.facebook { 
+	font-size:16px; line-height:32px;
+	box-shadow:none; border:0 none; border-radius:0px;
+	font-family: 'Myriad Pro', 'Verdana', Arial, sans-serif;
+	font-weight:normal; text-shadow:none; background-image:none;
+	background-color:#4863ae;
+	min-width: 230px;
+}
+.zocial.facebook:hover, .zocial.facebook:focus {
+	background-image:none; background-color:3d5494;
+}
+.zocial.facebook:before {width:20px;}
+
+/* - Fehlermeldung, bei fehlerhafter Anmeldung - */
+.alert-danger, .alert-error, .box.errorbox {width:70%; margin:30px auto;}
+.box.errorbox p {margin:0 -20px;}
+
+/* bereits eingelogt */
+#page-login-index  #notice {margin:30px auto; height:300px; text-align:center;}
+
+/* =========================================== */
+/*    -----------  My-Seite ------------       */
+
+#page-my-index #block-region-content .block .content h3 {font-size: 36px; font-weight: normal; line-height: 30px; 
+margin-bottom: 10px; margin-top: 20px; padding: 0; text-align: center; text-transform: none;}
+#page-my-index #page-content {background:url([[pix:theme|teaserkarte2]]) no-repeat center -40px;}
+#page-my-index #block-region-content .block  .content {width:85%; max-width:1080px; margin:0 auto; text-align:center;}
+#page-my-index #block-region-content .block_html.block {padding:0px; margin:0px; background-color:rgba(255,255,255,0.5);}
+#page-my-index .block_oc_my_courses.block{background-color:rgba(230, 230, 230, 1.0); margin:-20px 0 0 0;}
+
+
+/* =============================================== */
+/*    ------   Footernavigation im Kurs   -----    */
+#oc-div-footerlinks-outer {background-color:#f0f0f0; min-height:86px; width:100%; margin:0px; 
+	border-top: 1px solid #d4d4d4; border-bottom: 1px solid #d4d4d4;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+	margin-bottom:10px;
+}
+
+#oc-div-footerlinks {width:70%; max-width:840px; margin:0px auto; padding:20px 0px 20px 0px;}
+
+#oc-div-footerlinks p {font-size: 16px; line-height: 22px; text-align:center;}
+#oc-div-prevlection-inactive, #oc-div-nextlection-inactive,
+#oc-div-up a, #oc-div-prevlection a, #oc-div-nextlection a
+{ display:block; width:33.0%; min-width:195px;height:32px; text-decoration:none; float:left; margin-right:0.5%; background-color:#b1b1b1; padding-top:9px; margin-bottom:3px;}
+ #oc-div-nextlection-inactive, #oc-div-nextlection a {margin-right:0px;}
+#oc-div-up a  {background-color:#30ade7;}
+#oc-div-up a:hover, #oc-div-up a:focus {background-color:#1a98d1;}
+#oc-div-prevlection a:hover, #oc-div-prevlection a:focus , #oc-div-nextlection a:hover, #oc-div-nextlection a:focus {background-color:#979797;}
+#oc-div-prevlection-inactive p, #oc-div-nextlection-inactive p {color:#fff;}  /* color:#ddd; */
+#oc-div-up p, #oc-div-prevlection p, #oc-div-nextlection p {color:#fff;}
+#oc-div-prevlection p, #oc-div-prevlection-inactive p {margin-left:40px; text-align:left;}
+#oc-div-nextlection p, #oc-div-nextlection-inactive p  {margin-right:40px; text-align:right;}
+#oc-div-footerlinks a {vertical-align:middle;}
+#oc-div-prevlection-inactive, #oc-div-prevlection a  {background-image:url([[pix:theme|lektion-prev]]); background-repeat:no-repeat; 
+background-position:left center; background-size:35px 35px;}
+#oc-div-nextlection-inactive, #oc-div-nextlection a  {background-image:url([[pix:theme|lektion-next]]); background-repeat:no-repeat; 
+background-position:right center; background-size:35px 35px;}
+#oc-div-prevlection-inactive, #oc-div-nextlection-inactive {opacity: 0.4; filter:alpha(opacity=40);} 
+.oc-div-nextlection a:after, #oc-div-nextlection p:after {clear:both;}
+
+@media only screen and (max-width:979px) {
+	#oc-div-footerlinks{width:80%;}}
+@media only screen and (max-width:767px){
+	#oc-div-footerlinks{width:70%;} 
+	#oc-div-prevlection-inactive, #oc-div-nextlection-inactive, 
+	#oc-div-up a, #oc-div-prevlection a, #oc-div-nextlection a{width:100%; margin:3px auto;}
+	#oc-div-prevlection p, #oc-div-prevlection-inactive p {margin-left:0px; text-align:center;}
+	#oc-div-nextlection p, #oc-div-nextlection-inactive p  {margin-right:0px; text-align:center;}
+}
+/* =========================================== */
+/*    ------  Fehlermeldung im Popup  ------   */
+
+/* - Fehlermeldung, Redirect auf Popupseite gelegt - */
+.pagelayout-redirect .alert-block, .pagelayout-redirect .alert-info {
+	width:70%;
+	max-width:840px;
+	min-width:260px;
+	margin:30px auto;
+	padding:20px 20px;
+}
+
+/* =========================================== */
+/*                Kursunterseiten              */
+/* =========================================== */
+#page-course-view-fntabs .weeks .fntopicsoutlineinner ul.section li.modtype_forum .mod-indent,
+#page-course-view-fntabs .weeks .fntopicsoutlineinner ul.section li.groupselect .mod-indent{
+	margin-left: auto;
+    margin-right: auto;
+    max-width: 840px;
+    overflow: visible;
+    padding-top: 10px;
+    width: 70%;
+}
+.activity.groupselect img.activityicon {
+	width:90px;
+	height:90px;
+	margin-bottom:-25px;
+}
+.activity.modtype_forum img.activityicon {
+	width:90px;
+	height:90px;
+	margin-bottom:-30px;
+}
+.section .activity .contentafterlink {
+	margin-left:0px;
+	padding-top:30px;
+}
+
+.pagelayout-course h3 {
+	font-size:32px;
+	line-height:40px;
+}
+.pagelayout-course h4 {
+	font-size:24px;
+	line-height:30px;
+}
+.forumtype-general .replies {text-align:center;}
+.forumheaderlist th.header {vertical-align:top;}
+
+/* =========================================== */
+/*    ----    Gruppenbildung ...        ----   */
+
+.path-mod-groupselect #region-main {margin-left:auto; margin-right:auto; width:70%; max-width:960px; padding:30px 0px;}
+.path-mod-groupselect .mod_introbox {padding:0px;}
+.path-mod-groupselect .singlebutton div, .path-mod-groupselect input[type="submit"] {margin-left:0px;}
+.path-mod-groupselect .generaltable thead th {vertical-align:top; font-size:15px !important;}
+.path-mod-groupselect #notice {width:100%;}
+@media(max-device-width:480px){#page-blocks-oc_mooc_nav-forum_view #region-main {overflow-x:auto;}}
+@media only screen and (max-device-width: 800px){#page-blocks-oc_mooc_nav-forum_view #region-main {overflow-x:auto;}}
+
+/* =========================================== */
+/*    ----    Newsforum Anpassung       ----   */
+
+.posting {text-align:left;}
+
+/* =========================================== */
+/*    ----  Teilnehmerseite Anpassung   ----   */
+#region-main .userlist {font-size:15px;}
+.block_online_users_map.block .header h2 {
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 40px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 0;
+	text-align: center;
+	text-transform: none;
+	color:#666;
+	text-shadow:0 1px 0 rgba(255,255,255,0.5);
+}
+
+/* =========================================== */
+/*    ----  Diskussionsforum Anpassung  ----   */
+.discussiontoggle.iconsmall .smallicon {
+	width:12px;
+	height:12px;
+}
+.forumheaderlist {width:100%;}
+.path-blocks-oc_mooc_nav .invisiblefieldset {margin:0 10px 0 0;}
+@media(max-device-width:480px){.path-mod-groupselect #region-main {overflow-x:auto;}}
+@media only screen and (max-device-width: 800px){.path-mod-groupselect #region-main {overflow-x:auto;}}
+/* =========================================== */
+/*    ----  Socialmediaseite Anpassung  ----   */
+.inner_kurs_content {
+	width:100%;
+	max-width:100%;
+}
+.kurscontent_toptitle {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 40px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 0;
+  text-align: center;
+  text-transform: none;
+  color:#666;
+  text-shadow:0 1px 0 rgba(255,255,255,0.5);
+}
+
+
+
+/* =========================================== */
+/*    ----  Anpassung der Badgeseite    ----   */
+
+
+/* =========================================== */
+/*			   Ende Kursunterseiten			   */
+/* =========================================== */
+
+
+
+/* ====================================================================================== */
+	
+/* ====================================================================================== */
+/* CSS für Kursübersicht */
+/* Kurshauptnavigation */
+.block_oc_mooc_nav.block .header h2, .coursinfositetitel {
+    font-size: 32px; font-weight: normal; line-height: 34px; margin-bottom: 10px; margin-top: 16px; padding: 0; text-align: center; text-transform: none;}
+
+.block_oc_mooc_nav.block .content{padding-top:5px;}
+#oc-coursenav {background-color:#f0f0f0; clear: both; margin:3px 0px; width:100%; height:45px; 
+border-top: 1px solid #d4d4d4; border-bottom: 1px solid #d4d4d4; 
+-webkit-box-shadow: 0px -3px 4px 0px rgba(0,0,0,0.07);
+-moz-box-shadow: 0px -3px 4px 0px rgba(0,0,0,0.07);
+box-shadow: 0px -3px 4px 0px rgba(0,0,0,0.07);
+}
+ul#oc-coursenavlist {margin-left:auto; margin-right:auto; list-style-type: none;padding:0px; text-align:center; max-width:1080px; width:80%; min-width:275px;}
+
+ul#oc-coursenavlist li {background-color:#f0f0f0; min-width:45px; max-width:173px; width:16.5%; display:inline; float:left;}
+
+
+ul#oc-coursenavlist li a{display:block;height:45px; margin:0px; padding:0px; }
+ul#oc-coursenavlist li.oc_mooc_nav_clicked {background-color:#ffffff; border:1px solid #d4d4d4; border-bottom:0px; height:46px; margin-top:-1px;}
+a#oc-coursestart {background: url([[pix:theme|course-icon-ia-01]]) no-repeat center center;background-size: 45px 45px;}
+a#oc-coursestart:hover, li.oc_mooc_nav_clicked a#oc-coursestart {background: url([[pix:theme|course-icon-01]]) no-repeat center center;background-size: 45px 45px;}
+a#oc-news {background: url([[pix:theme|course-icon-ia-02]]) no-repeat center center;background-size: 45px 45px;}
+a#oc-news:hover, li.oc_mooc_nav_clicked a#oc-news {background: url([[pix:theme|course-icon-02]]) no-repeat center center;background-size: 45px 45px;}
+a#oc-teilnehmer {background: url([[pix:theme|course-icon-ia-03]]) no-repeat center center;background-size: 45px 45px;}
+a#oc-teilnehmer:hover, li.oc_mooc_nav_clicked a#oc-teilnehmer {background: url([[pix:theme|course-icon-03]]) no-repeat center center;background-size: 45px 45px;}
+a#oc-diskussion {background: url([[pix:theme|course-icon-ia-04]]) no-repeat center center; background-size: 45px 45px;}
+a#oc-diskussion:hover, li.oc_mooc_nav_clicked a#oc-diskussion {background: url([[pix:theme|course-icon-04]]) no-repeat center center;background-size: 45px 45px;}	
+a#oc-coursesocial {background: url([[pix:theme|course-icon-ia-05]]) no-repeat center center;background-size: 45px 45px;}
+a#oc-coursesocial:hover, li.oc_mooc_nav_clicked a#oc-coursesocial {background: url([[pix:theme|course-icon-05]]) no-repeat center center;background-size: 45px 45px;}		
+a#oc-badges {background: url([[pix:theme|course-icon-ia-06]]) no-repeat center center;background-size: 45px 45px;}
+a#oc-badges:hover, li.oc_mooc_nav_clicked a#oc-badges {background: url([[pix:theme|course-icon-06]]) no-repeat center center;background-size: 45px 45px;}	
+
+
+/* Button vor und zurück */
+/* Kapitelnavigation */ 
+button.btn_prev_left{float:left; margin-top:80px; margin-left:auto; margin-right:auto; background-image:url([[pix:theme|btn_prev]]); background-position:0 0; 
+				background-repeat:no-repeat; background-size:35px 100px; height:50px; width:35px; background-color:transparent; border:none; box-shadow:none;
+				-webkit-transition:background-position 0s linear 0s; transition:background-position 0s linear 0s; padding-left:0px; padding-right:0px;}
+button.btn_prev_left:hover, button.btn_prev_left:focus{background-position:0 -50px; background-color:transparent; border:none; box-shadow:none; 
+				-webkit-transition:background-position 0s linear 0s; transition:background-position 0s linear 0s;}
+button.btn_prev_left.disabled {opacity:0;}
+
+button.btn_next_right{float:right; margin-top:80px; margin-left:auto; margin-right:auto; background-image:url([[pix:theme|btn_next]]); background-position:0 0; 
+				background-repeat:no-repeat; background-size:35px 100px; height:50px; width:35px; background-color:transparent; border:none; box-shadow:none;
+				-webkit-transition:background-position 0s linear 0s; transition:background-position 0s linear 0s; padding-left:0px; padding-right:0px;}
+button.btn_next_right:hover, button.btn_next_right:focus{background-position:0 -50px; background-color:transparent; border:none; box-shadow:none; 
+				-webkit-transition:background-position 0s linear 0s; transition:background-position 0s linear 0s;}
+button.btn_next_right.disabled {opacity:0;}
+/*
+@media only screen and (min-width:481px) and (max-width:979px) {
+	button.btn_prev_left {margin-right: auto;}
+	button.btn_next_right {margin-right: auto;}
+}
+@media only screen and (max-width:480px) {
+	button.btn_prev_left {margin-right: auto;}
+	button.btn_next_right {margin-right: auto;}
+}*/
+@media only screen and (min-width:768px) and (max-width:979px) {
+	button.btn_prev_left, button.btn_next_right {margin-top: 43px;}
+}
+@media only screen and (min-width:481px) and (max-width:767px){
+	button.btn_prev_left, button.btn_next_right {margin-top: 38px; width:21px; height:30px;}
+	button.btn_prev_left, button.btn_next_right {background-size:21px 60px;} 
+	button.btn_prev_left:hover, button.btn_prev_left:focus,
+	button.btn_next_right:hover, button.btn_next_right:focus{background-position:0 -30px;}
+}
+@media only screen  and (max-width:480px){
+	button.btn_prev_left, button.btn_next_right {margin-top: 38px; width:21px; height:30px;}
+	button.btn_prev_left, button.btn_next_right {background-size:21px 60px;}
+	button.btn_prev_left:hover, button.btn_prev_left:focus,
+	button.btn_next_right:hover, button.btn_next_right:focus{background-position:0 -30px;}
+}
+
+/* ====================================================================================== */
+	
+/* ====================================================================================== */
+
+/* Kursformat fntabs */
+.fntopicsoutlinecontent .number-select {padding:0px; margin:0px; border:0px;}
+.fntopicsoutlinecontent {border:0;}
+.fntopicsoutlinecontent .fnweeklynavselected {border:0; border-color:transparent;}
+.fnweeklynavselected .content-section {border:0; padding:0px; margin:0px -1px 0px 0px;}
+
+.oc-lektionsreiter {
+    border-bottom: 1px solid #d4d4d4;
+}
+.oc-lektionsreiter table.fnweeklynav {
+    margin-bottom: -1px;
+}
+
+/* Neue Regeln Lektionsreiter */
+.oc-lektionsreiter .fnweeklynav a.tooltip {color:#333; font-size:13px; line-height:18px; font-weight:normal; width:100%; height:93%;}
+.oc-lektionsreiter .fnweeklynavnorm.tab-oc-mooin, .fnweeklynavnorm.tab-oc-mooin a:active {background-color:#f0f0f0; display:block; margin-top:2px; margin-right:-2px; margin-left:-3px;height:70px; width:120px; border:1px solid #d4d4d4; padding:0px;}
+.oc-lektionsreiter .oc-progress-div {margin:-11px 5% 0px 5%; width:90%; padding:0px; font-size: 12px; line-height: 14px;}
+.oc-lektionsreiter .fnweeklynav td{height:72px;}
+.oc-lektionsreiter .fnweeklynavselected.tab-oc-mooin {background-color:#fff; display:block; margin-right:-2px; margin-left:-3px;height:72px; width:128px; border:1px solid #d4d4d4; border-bottom:0px; padding:2px 0px 0px 0px;}
+.oc-lektionsreiter .fnweeklynavselected.tab-oc-mooin  .tab-oc-seclected-content {color:#333; font-size:14px; line-height:18px; font-weight:normal; width:100%; height:100%; margin-top:5px;}
+.oc-lektionsreiter .fnweeklynavselected.tab-oc-mooin .oc-progress-div {margin-top:-10px;}
+
+/* Lektionsnavigation vor und zurück*/
+.oc-lektionsreiter #fn_tab_next, .oc-lektionsreiter #fn_tab_previous {padding:0px; margin:0px; visibility:visible;}
+.oc-lektionsreiter #fn_tab_next a,
+.oc-lektionsreiter #fn_tab_next .next-lection-inactive {display:block; background-color:#e3e3e3; margin:2px 0px 0px -3px; height:70px; width:50px; border:1px solid #d4d4d4; padding:0px;}
+.oc-lektionsreiter #fn_tab_next a {margin:2px 0px 0px -3px;}
+.oc-lektionsreiter #fn_tab_previous  a, 
+.oc-lektionsreiter #fn_tab_previous .prev-lection-inactive {display:block; background-color:#e3e3e3; margin:2px 0px 0px 0px; /* margin-right:-2px; */ height:70px; width:50px; border:1px solid #d4d4d4; padding:0px;}
+
+a.prev-lection .oc-lection-btn{background-image:url([[pix:theme|btn_prev2]]); background-position:0 0; background-repeat:no-repeat; 
+			   background-size:auto 80px; height:40px; width:30px; line-height:0px; margin-top:0px; margin:13px auto 0px auto;}
+a.prev-lection:hover .oc-lection-btn {background-position:0 -40px;}
+a.next-lection .oc-lection-btn{background-image:url([[pix:theme|btn_next2]]); background-position:0 0; background-repeat:no-repeat; 
+			   background-size:auto 80px; height:40px; width:30px; line-height:0px; margin-top:0px; margin:13px auto 0px auto;}
+a.next-lection:hover .oc-lection-btn {background-position:0 -40px;}
+
+@media only screen and (min-width:980px) and (max-width:1200px) {
+.oc-lektionsreiter .fnweeklynavnorm.tab-oc-mooin, .fnweeklynavnorm.tab-oc-mooin a:active {width:105px;} /* Reiterbreite */
+.oc-lektionsreiter .fnweeklynavselected.tab-oc-mooin {width:105px;} /* ausgewählter Reiter */
+.oc-lektionsreiter #fn_tab_next a {width:45px; margin-top:2px;} /* weiter Reiter */
+.oc-lektionsreiter #fn_tab_next .next-lection-inactive {width:45px; margin-top:2px;} /* weiter Reiter inaktiv*/
+.oc-lektionsreiter #fn_tab_previous  a, 
+.oc-lektionsreiter #fn_tab_previous .prev-lection-inactive {width:45px; margin-top:2px;} /* zurueck Reiter */
+}
+@media only screen and (min-width:768px) and (max-width:979px) {
+.oc-lektionsreiter .fnweeklynavnorm.tab-oc-mooin, .fnweeklynavnorm.tab-oc-mooin a:active {width:90px;} /* Reiterbreite */
+.oc-lektionsreiter .fnweeklynavselected.tab-oc-mooin {width:95px;} /* ausgewählter Reiter */
+.oc-lektionsreiter #fn_tab_next a {width:35px; margin-top:2px;} /* weiter Reiter */
+.oc-lektionsreiter #fn_tab_next .next-lection-inactive {width:35px; margin-top:2px;} /* weiter Reiter inaktiv*/
+.oc-lektionsreiter #fn_tab_previous  a, 
+.oc-lektionsreiter #fn_tab_previous .prev-lection-inactive {width:35px;} /* zurueck Reiter */
+}
+/* Anpassung Pfeil-Größe */
+@media only screen and (max-width:767px) {
+a.prev-lection .oc-lection-btn{background-size:auto 40px; height:20px; width:13px;}
+a.prev-lection:hover .oc-lection-btn {background-position:0 -20px;}
+a.next-lection .oc-lection-btn{background-size:auto 40px; height:20px; width:13px;}
+a.next-lection:hover .oc-lection-btn {background-position:0 -20px;}
+}
+@media only screen and (min-width:481px) and (max-width:767px) {
+#mooc-course-content-top #mooc-course-video.span7 {width:80%;}
+.oc-lektionsreiter .fnweeklynavnorm.tab-oc-mooin, .fnweeklynavnorm.tab-oc-mooin a:active {width:65px; height:62px;} /* Reiterbreite */
+.oc-lektionsreiter .fnweeklynav td{height:64px;}
+.oc-lektionsreiter .fnweeklynavselected.tab-oc-mooin {width:68px; height:64px;} /* ausgewählter Reiter */
+.oc-lektionsreiter #fn_tab_next a {width:30px; height:62px; margin-top:2px;} /* weiter Reiter */
+.oc-lektionsreiter #fn_tab_next .next-lection-inactive {width:30px; height:62px; margin-top:2px;} /* inaktiver weiter Reiter */
+.oc-lektionsreiter #fn_tab_previous  a {width:30px; height:62px; margin-top:2px;} /* zurueck Reiter */ 
+.oc-lektionsreiter #fn_tab_previous .prev-lection-inactive {width:30px; height:62px; margin-top:2px;} /* zurueck Reiter */
+.oc-lektionsreiter .fnweeklynav a.tooltip {line-height:16px;} /* Text Reiter */
+.oc-lektionsreiter .fnweeklynavselected.tab-oc-mooin  .tab-oc-seclected-content {line-height:16px;} /* Text ausgewählter Reiter */
+/* Anpassung Pfeil-Größe */
+a.prev-lection .oc-lection-btn{background-size:auto 60px; height:30px; width:22px;}
+a.prev-lection:hover .oc-lection-btn {background-position:0 -30px;}
+a.next-lection .oc-lection-btn{background-size:auto 60px; height:30px; width:22px;}
+a.next-lection:hover .oc-lection-btn {background-position:0 -30px;}
+}
+
+@media only screen and (max-width:480px) {
+#mooc-course-content-top #mooc-course-video.span7 {width:80%;}
+.oc-lektionsreiter .fnweeklynavnorm.tab-oc-mooin, .fnweeklynavnorm.tab-oc-mooin a:active {width:53px; height:53px;} /* Reiterbreite */
+.oc-lektionsreiter .fnweeklynav td{height:54px;}
+.oc-lektionsreiter .fnweeklynavselected.tab-oc-mooin {width:55px; height:54px;} /* ausgewählter Reiter */
+.oc-lektionsreiter #fn_tab_next a {width:22px; height:53px; margin-top:2px;} /* weiter Reiter */
+.oc-lektionsreiter #fn_tab_next .next-lection-inactive {width:22px; height:53px; margin-top:2px;} /* inaktiver weiter Reiter */
+.oc-lektionsreiter #fn_tab_previous  a {width:22px; height:53px; margin-top:2px;} /* zurueck Reiter */ 
+.oc-lektionsreiter #fn_tab_previous .prev-lection-inactive {width:22px; height:53px; margin-top:2px;} /* zurueck Reiter */
+.oc-lektionsreiter .fnweeklynav a.tooltip {line-height:14px; font-size:11px;} /* Text Reiter */
+.oc-lektionsreiter .fnweeklynavselected.tab-oc-mooin  .tab-oc-seclected-content {line-height:14px; font-size:11px;} /* Text ausgewählter Reiter */
+.oc-lektionsreiter .fnweeklynavselected.tab-oc-mooin .oc-progress-div {margin-top:-11px;} /* Korrektur Position Vortschrittsbalken */
+.oc-lektionsreiter .oc-progress-div {font-size:11px; line-height:14px;} /* Schriftgrößen Vortschritsbalken */
+
+}
+@media only screen and (max-device-width:480px){
+#mooc-course-content-top #mooc-course-video.span7 {width:100%;}
+.oc-lektionsreiter .fnweeklynavnorm.tab-oc-mooin, .fnweeklynavnorm.tab-oc-mooin a:active {width:43px; height:50px;} /* Reiterbreite */
+.oc-lektionsreiter .fnweeklynav td{height:52px;}
+.oc-lektionsreiter .fnweeklynavselected.tab-oc-mooin {width:45px; height:52px;} /* ausgewählter Reiter */
+.oc-lektionsreiter #fn_tab_next a {width:17px; height:50px; margin-top:2px;} /* weiter Reiter */
+.oc-lektionsreiter #fn_tab_next .next-lection-inactive {width:17px; height:50px; margin-top:2px;} /* inaktiver weiter Reiter */
+.oc-lektionsreiter #fn_tab_previous  a {width:17px; height:50px; margin-top:2px;} /* zurueck Reiter */ 
+.oc-lektionsreiter #fn_tab_previous .prev-lection-inactive {width:17px; height:50px; margin-top:2px;} /* zurueck Reiter */
+.oc-lektionsreiter .fnweeklynav a.tooltip {line-height:13px; font-size:10.5px;} /* Text Reiter */
+.oc-lektionsreiter .fnweeklynavselected.tab-oc-mooin  .tab-oc-seclected-content {line-height:13px; font-size:10.5px;} /* Text ausgewählter Reiter */
+.oc-lektionsreiter .fnweeklynavselected.tab-oc-mooin .oc-progress-div {margin-top:-11px;} /* Korrektur Position Vortschrittsbalken */
+.oc-lektionsreiter .oc-progress-div {font-size:10.5px; line-height:13px;} /* Schriftgrößen Vortschritsbalken */
+.oc-lektionsreiter table.fnweeklynav {margin-bottom: -2px;}
+
+a.prev-lection .oc-lection-btn{background-size:auto 40px; height:20px; width:13px;}
+a.prev-lection:hover .oc-lection-btn {background-position:0 -20px;}
+a.next-lection .oc-lection-btn{background-size:auto 40px; height:20px; width:13px;}
+a.next-lection:hover .oc-lection-btn {background-position:0 -20px;}
+}
+
+
+
+/* ====================================================================================================== */
+
+/* Tabelle */
+/* .fnweeklynav {max-width:840px width:70%;} */
+#page-course-view-fntabs .weeks .fntopicsoutlineinner ul.section li .mod-indent {max-width:840px; }
+#page-course-view-fntabs .weeks .fntopicsoutlineinner ul.section {width:100%;margin:0px; padding:0px;}
+#mooc-course-video {max-width:840px; width:100%;}
+#page-course-view-fntabs ul.weeks {border:0px; padding:0px margin:0px;}
+.fntopicsoutlineinner {padding:0px !important; margin:0px; border:0px;} 
+
+
+
+
+
+
+/* -- */
+
+.occapira {width:100%; padding:0px; width:0px;} 
+#page-course-view-fntabs .weeks .fntopicsoutlineinner ul.section li {width:100%;}
+#page-course-view-fntabs .weeks .fntopicsoutlineinner ul.section li  .mod-indent {width:100%; max-width:100%; padding:0px; margin:0px; display:block;}
+#mooc-course-content-top #mooc-course-video.span7 {width:70%; max-width:840px; min-width:280px; margin-left:auto; margin-right:auto;float:none;}
+
+
+#mooc-course-content-top #mooc-course_video {display:block;}
+.modtype_label .no-overflow .no-overflow {width: 70%; max-width:840px; margin-left:auto; margin-right:auto; padding-top:30px; overflow:visible;}
+.modtype_label iframe {border:0px;}
+.modtype_label .no-overflow .no-overflow, .modtype_label .no-overflow .no-overflow p {font-size:16px; line-height:28px;}
+#page-course-view-fntabs .weeks .fntopicsoutlineinner ul.section li.modtype_resource .mod-indent {width:70%; max-width:840px; margin:25px auto;}
+.kurs-lektion-titel h1{text-align:center;}
+
+.path-site .modtype_label .no-overflow .no-overflow {width: 100%; max-width:100%;}
+/* Social Media */
+#block-region-side-footer {background-color:#fff;}
+.social {width:50px; height:50px; margin:10px 5px; float:left;}
+.social_fb {background-image: url([[pix:theme|facebook_up]]); background-size:50px 50px;}
+.social_fb:hover {background-image: url([[pix:theme|facebook_over]]);background-size:50px 50px;}
+.social_yt {background-image: url([[pix:theme|youtube_up]]);background-size:50px 50px;}
+.social_yt:hover {background-image: url([[pix:theme|youtube_over]]);background-size:50px 50px;}
+.social_gp {background-image: url([[pix:theme|google_up]]);background-size:50px 50px;}
+.social_gp:hover {background-image: url([[pix:theme|google_over]]);background-size:50px 50px;}
+.social_tw {background-image: url([[pix:theme|twitter_up]]);background-size:50px 50px;}
+.social_tw:hover {background-image: url([[pix:theme|twitter_over]]);background-size:50px 50px;}
+
+/* ===============    Kursübersicht ============================== */
+.course_grid:after {clear:both;}
+.section_general {width:85%; max-width:1080px; margin-left:auto; margin-right:auto;}
+#page-my-index #block-region-content .block_oc_my_courses.block  .content {width:100%; max-width:none; margin:0; text-align:center; padding:0px;}
+.wrapper_general {clear:both;}
+.course_grid {max-width:985px; margin-left:auto; margin-right:auto;}
+.course_grid.zwei-kurse {max-width:680px;}
+.course_grid.ein-kurs {max-width:300px;}
+.course_grid.ein-kurs .course_box {margin-right:0px; margin-left:0px;}
+.course_box:hover {cursor:pointer;}
+.course_box:hover > .upper {background-color:#f0f0f0; color:#000;}
+.wrapper_general {padding-left:25px;}
+.course_box {float:left;width:300px; height:200px; margin-right:27.5px; margin-bottom:25px; background-color:#888; box-shadow: 2px 2px 6px  0px #777;}
+
+@media only screen and (max-width:1199px) {
+	.section_general {width:680px;}
+	.course_box {margin-right:25px;}
+}
+@media only screen and (max-width:767px){
+	.section_general {width:300px;}
+	.wrapper_general {padding-left:0px;}
+	.course_box {margin-right:0px; margin-left:0px;}
+}
+.mooc0 {background-image: url('/blocks/oc_my_courses/pix/static_plate.jpg');}
+.mooc1 {background-image: url('/blocks/oc_my_courses/pix/mooinmooc01.jpg');}
+.mooc2 {background-image: url('/blocks/oc_my_courses/pix/mooinmooc02.jpg');}
+.mooc3 {background-image: url('/blocks/oc_my_courses/pix//mooinmooc03.jpg');}
+.mooc4 {background-image: url('/blocks/oc_my_courses/pix/mooinmooc05.jpg');}
+.mooc5 {background-image: url('/blocks/oc_my_courses/pix/mooinmooc04.jpg');}
+.mooc6 {background-image: url('/blocks/oc_my_courses/pix/mooinmooc06.jpg');}
+.mooc7 {background-image: url('/blocks/oc_my_courses/pix/mooinmooc07.jpg');}
+.mooc8 {background-image: url('/blocks/oc_my_courses/pix/mooinmooc08.jpg');}
+.mooc9 {background-image: url('/blocks/oc_my_courses/pix/mooinmooc09.jpg');}
+.mooc10 {background-image: url('/blocks/oc_my_courses/pix/mooinmooc10.jpg');}
+.mooc11 {background-image: url('/blocks/oc_my_courses/pix/mooinmooc11.jpg');}
+.wkurs {background-image: url('/blocks/oc_my_courses/pix/weiterbildung.jpg');}
+
+.moochubkurse h1 {text-align:center; font-size:32px; color:#666; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); font-weight:normal;}
+
+.moochub01 {background-image: url('/blocks/oc_my_courses/pix/imoox01.jpg');}
+.moochub02 {background-image: url('/blocks/oc_my_courses/pix/imoox02.jpg');}
+.moochub03 {background-image: url('/blocks/oc_my_courses/pix/imoox03.jpg');}
+.moochub04 {background-image: url('/blocks/oc_my_courses/pix/imoox04.jpg');}
+.moochub05 {background-image: url('/blocks/oc_my_courses/pix/imoox05.jpg');}
+.moochub06 {background-image: url('/blocks/oc_my_courses/pix/imoox06.jpg');}
+.moochub07 {background-image: url('/blocks/oc_my_courses/pix/imoox07.jpg');}
+.moochub08 {background-image: url('/blocks/oc_my_courses/pix/imoox08.jpg');}
+.moochub09 {background-image: url('/blocks/oc_my_courses/pix/imoox09.jpg');}
+.moochub10 {background-image: url('/blocks/oc_my_courses/pix/imoox10.jpg');}
+.moochub11 {background-image: url('/blocks/oc_my_courses/pix/imoox11.jpg');}
+.moochub12 {background-image: url('/blocks/oc_my_courses/pix/imoox12.jpg');}
+.moochub13 {background-image: url('/blocks/oc_my_courses/pix/imoox13.jpg');}
+.moochub14 {background-image: url('/blocks/oc_my_courses/pix/imoox14.jpg');}
+.moochub15 {background-image: url('/blocks/oc_my_courses/pix/imoox15.jpg');}
+.moochub16 {background-image: url('/blocks/oc_my_courses/pix/imoox16.jpg');}
+
+.ockurs0 {background-image: url('/blocks/oc_my_courses/pix/ockurs00.jpg');}
+.ockurs1 {background-image: url('/blocks/oc_my_courses/pix/ockurs01.jpg');}
+.ockurs2 {background-image: url('/blocks/oc_my_courses/pix/ockurs02.jpg');}
+.ockurs3 {background-image: url('/blocks/oc_my_courses/pix/ockurs03.jpg');}
+.ockurs4 {background-image: url('/blocks/oc_my_courses/pix/ockurs04.jpg');}
+.ockurs5 {background-image: url('/blocks/oc_my_courses/pix/ockurs05.jpg');}
+.ockurs6 {background-image: url('/blocks/oc_my_courses/pix/ockurs06.jpg');}
+.ockurs7 {background-image: url('/blocks/oc_my_courses/pix/ockurs07.jpg');}
+.ockurs8 {background-image: url('/blocks/oc_my_courses/pix/ockurs08.jpg');}
+
+.upper {background-color: rgba(239, 239, 239, 0.83); 
+		z-index:100;
+		position:absolute;
+		color:#666;
+		width:294px; 
+		padding:3px;
+		text-align:center;
+		font-size:20px; 
+		line-height:41px; 
+		margin-top:153px; }
+.upper2 {background-color:#333; z-index:100;position:absolute;color:#fff;width:294px; padding:3px;text-align:center;
+	 font-size:20px; line-height:26px; margin-top:169px;}
+
+.moochubkurse .upper {
+    background-color: rgba(239, 239, 239, 0.83);
+    z-index: 100;
+    position: absolute;
+    color: #666;
+    width: 294px;
+    padding: 3px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px; /* einzeilig 42px */ 
+    height: 41px;
+    margin-bottom: 0px;
+    margin-top: 153px;
+    vertical-align: bottom;
+}
+/* moochub partner banner */
+#partner-banner {
+	display:none;
+	background-color:#ccc;
+	min-height: 55px;
+	z-index:105;
+	padding:0px;
+	margin:0px;
+}
+.moochub-banner-left {min-width:280px; float:left; width:30%; background: url([[pix:theme|partner-bg]]) repeat-x top left; 
+height:55px;margin:0px; border:0px;}
+.moochub-banner-right{background: url([[pix:theme|partner-pfeil2]]) no-repeat center left; float:left; height:55px;margin:0px; border:0px}
+a.see-partner {background: url([[pix:theme|open-moochub]]) no-repeat 0px -46px; background-size: 70px 92px; display: block; 
+	height:46px; width:70px; padding:0px; position:absolute; right:3%; top:5px; z-index:100; cursor:pointer;}
+a#moochub-open {background-position:0px 0px; top:5px; visibility:visible; z-index:90;}
+a#moochub-close {background-position:0px -46px; top:10px; visibility:visible; z-index:110;}
+a#moochub-logo-moochub {background: url([[pix:theme|moochub-weiss]]) no-repeat center left; background-size: 123px 21px; display: block; 
+	height:21px; width:123px; margin:16px auto; padding:0px;}
+a#moochub-logo-mooin {background: url([[pix:theme|logo160]]) no-repeat center left; background-size: 106px 28px; display: block; 
+	height:28px; width:106px; margin:12px 20px 10px 80px; padding:0px; float:left;}
+a#moochub-logo-imoox {background: url([[pix:theme|imoox-logo]]) no-repeat center left; background-size: 120px 34px; display: block; 
+	height:34px; width:120px; margin:10px 0px; padding:0px; float:left;}
+
+@media only screen and (max-width:1199px){	
+	.usermenu {margin-right:15px;}
+}
+@media only screen and (max-width:767px){
+.moochub-banner-left {width:100%; height:67px;}
+.moochub-banner-right {background-image:none; width:100%;}
+a#moochub-close {top:77px;}
+a#moochub-logo-mooin{margin:12px 20px 10px 80px;}
+a#moochub-logo-moochub{margin:16px 0px 10px 80px;}
+.usermenu {margin-right:40px;}
+}
+@media only screen and (max-width:480px){
+a#moochub-logo-mooin{margin:12px 60px 10px 15px; }
+a#moochub-logo-imoox{margin:10px 60px 10px 15px; }
+a#moochub-logo-moochub{margin:16px 0px 10px 15px;}
+.moochub-banner-right {background-image:none; width:100%; height:107px}
+a#moochub-close {top:130px;}
+.usermenu {margin:0px 0px 0px -10px;}
+.dir-ltr .usermenu {float:left;}
+a#logo {margin-right:50px;}
+}
+	 
+/*
+#footer a,a:link,a:active,a:visited {text-decoration:none; color:#000;}
+*/
+.descr_segment {margin-bottom:50px;}
+.descr_segment p {line-height:150%; max-width:1100px;margin-left:auto; margin-right:auto;padding-left:20px; padding-right:20px;}
+.descr_segment ul, .descr_segment ol {font-size:120%;text-align:justify;line-height:130%; margin-left:20px; margin-right:20px;
+									line-height:150%; max-width:1100px;margin-left:auto; margin-right:auto;padding-left:20px; padding-right:20px;}
+.descr_segment ul li, .descr_segment ol li {margin-left:20px;}
+
+scrollup {  
+	background: url("gfx/icon_top.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 50px;
+    display: none;
+    height: 40px;
+    opacity: 0.5;
+    position: fixed;
+    right: 50px;
+    text-indent: -9999px;
+    width: 40px;
+}
+	
+.course_box .info {display:none; width:300px;height:200px;background-color:#30ade7; color:#fff; text-align:left;}
+.course_box .info.oc_info {background-color:#d12121;}
+
+.inner_info {padding:10px; font-size: 14px; line-height: 20px;}
+.inf_line {padding-left:30px;font-size:120%; line-height:140%; /*text-shadow:1px 1px 1px #000;*/}
+.inf1 {background-image: url('/blocks/oc_my_courses/pix/ic/on2.png');background-position:0 2px;background-repeat:no-repeat;}
+.inf2 {background-image: url('/blocks/oc_my_courses/pix/ic/person2.png');background-position:0 2px;background-repeat:no-repeat;}
+.inf3 {background-image: url('/blocks/oc_my_courses/pix/ic/kommentar2.png');background-position:0 2px;background-repeat:no-repeat;}
+.inf4 {background-image: url('/blocks/oc_my_courses/pix/ic/zeit2.png');background-position:0 2px;background-repeat:no-repeat;}
+.inf5 {background-image: url('/blocks/oc_my_courses/pix/ic/kosten2.png');background-position:0 2px;background-repeat:no-repeat;}
+.inf6 {background-image: url('/blocks/oc_my_courses/pix/ic/teilnehmer2.png');background-position:0 2px;background-repeat:no-repeat;}
+.infstar{background-image: url('/blocks/oc_my_courses/pix/ic/stern2.png');background-position:0 2px;background-repeat:no-repeat;}
+
+/*
+.signIn {background-color:#91b955; color:#fff; 
+		margin-left:auto; margin-right:auto; font-size:240%; 
+			padding-left:100px; padding-right:100px; padding-top:20px; padding-bottom:20px;
+			border:none;margin-top:50px;  }
+
+.signIn:hover {cursor:pointer; background-color:rgb(194,225,163);}
+*/
+
+/* Eigene Kursübersichtsformate */
+.block .header h2 { font-size: 32px; font-weight: normal; line-height: 34px; margin-bottom: 10px; margin-top: 16px; padding: 0; text-align: center; text-transform: none;}
+.path-site .block .header h2 {margin: 45px auto 35px auto; color:#666;}
+
+/* Anpassung Kursinfoseite */
+.courseinfositetitel {color:#999; font-size: 32px; font-weight: normal; line-height: 34px; margin-bottom: 10px; margin-top: 16px; padding: 0; text-align: center; text-transform: none;}
+.mooctrailer {margin:0px auto; max-width:840px; width:70%; margin-top:35px;}
+.video-responsive {padding: 0px; margin: 0px; height:auto; width:100%;}
+.kursinfo-container  {margin-left:auto; margin-right:auto; list-style-type: none;padding:0px; text-align:left; max-width:840px; width:70%;}
+.absatz-info-container {padding:30px 0px;}
+.absatz-info-container .container-fluid {padding:0px;}
+.absatz-info-container ol {margin-left:23px;}
+.absatz-info-container ul {margin-left:17px;}
+.absatz-info-container li {padding-left:7px;}
+.absatz-info-container .kursinfo-img {text-align:center;}
+
+
+/* Socialblock */
+.socialmedia {
+max-width: 300px;
+margin-right: 25px;
+float: left;
+box-shadow: 2px 2px 6px  0px #777;
+height:300px;
+margin-bottom:50px;
+background-color:#fff;
+}
+.socialmedia:after {
+margin-right:0px;
+}
+.socialmedia.socialmedia-block3 {
+	margin-right:0px;
+}
+.socialmedia-block-top {
+	display:block;
+	background-color:#91b955;
+	color:#FFF;
+	font-weight:normal;
+	font-size:16px;
+	min-height:43px;
+	vertical-align:middle;
+	line-height:43px;	
+}
+a.socialmedia-block-top, a.socialmedia-block-top:hover, a.socialmedia-block-top:visited {color:#fff;}
+ /* style="display:block; background-color:#91b955; color:#FFF; font-weight:normal; font-size:16px; min-height:43px;vertical-align:middle; line-height:43px;" */
+
+p.playlist {
+	margin-left:15px;
+}
+.socialmedia_grid {max-width:985px; margin-left:auto; margin-right:auto;}
+
+@media only screen and (max-width:1199px) {
+	.socialmedia_grid {width:680px; margin-left:auto; margin-right:auto;}
+	.socialmedia {margin-right:25px;}
+	.socialmedia.socialmedia-block2 {margin-right:0px;}
+}
+@media only screen and (max-width:767px){
+	.socialmedia_grid {width:300px; margin-left:auto; margin-right:auto;}
+	.wrapper_general {padding-left:0px;}
+	.socialmedia, .socialmedia.socialmedia-block2, .socialmedia.socialmedia-block3 {margin-right:auto;margin-left:auto;}
+}
+@media(max-width:480px){
+	#page-site-index #block-region-side-post .inner_content {width:100%; margin:0px;}
+	.social-media-info {width:80%; margin-left:auto; margin-right:auto;}
+	.socialmedia_grid {width:300px; margin-left:auto; margin-right:auto;}
+	.socialmedia.socialmedia-block1, .socialmedia.socialmedia-block2, .socialmedia.socialmedia-block3 {margin-right:auto;margin-left:auto;}
+}
+
+#block-region-side-post .block_html {
+	background-color:#e6e6e6;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+
+/* Kursinfoseite Quickinfo */
+.quickinfo {padding-left:28px;padding-top:4px;display:inline; min-height:28px;margin-right:15px; text-align:left;}
+.quickinf1 {background-image: url('/blocks/oc_my_courses/pix/ic/on.png');background-position:0 4px;background-repeat:no-repeat;}
+.quickinf2 {background-image: url('/blocks/oc_my_courses/pix/ic/person.png');background-position:0 4px;background-repeat:no-repeat;}
+.quickinf3 {background-image: url('/blocks/oc_my_courses/pix/ic/kommentar.png');background-position:0 4px;background-repeat:no-repeat;}
+.quickinf4 {background-image: url('/blocks/oc_my_courses/pix/ic/zeit.png');background-position:0 4px;background-repeat:no-repeat;}
+.quickinf5 {background-image: url('/blocks/oc_my_courses/pix/ic/kosten.png');background-position:0 4px;background-repeat:no-repeat; margin-right:0px;}
+.oc-coursequickinfo {text-align:center; background-color:#f0f0f0; 
+clear: both; margin:3px 0px; width:100%; min-height:45px; 
+border-top: 1px solid #d4d4d4; border-bottom: 1px solid #d4d4d4; box-shadow:0 -3px 4px 0px rgba(0,0,0,0.07);}
+.oc-coursequickinfo ul {list-style-type: none;padding:0px; text-align:center; max-width:960px; width:auto; 
+min-width:300px; padding-top:5px; display:table; margin:3px auto;}
+.oc-coursequickinfo ul li {background-color:#f0f0f0; min-width:70px; float:left; font-size:14px; line-height:19px;}
+
+
+
+/* Kursübersicht Hintergrund */
+.block_oc_my_courses.block {
+	background-color:#e6e6e6;
+	margin:-45px 0px 0px 0px;
+	
+}
+.block_oc_my_courses.block h2 {
+	line-height:40px;
+	padding-top:30px;
+}
+.block_oc_my_courses .section_general {
+	padding-bottom:30px;
+}
+/*
+.oc_inner_layout .inner_content {width:80%; max-width:1080px;}
+	.inner_content{margin-left:auto; margin-right:auto; width:80%; max-width:960px; padding:0px;}
+	.oc-inner-content, .oc-block-inside-content {margin-left:auto; margin-right:auto; width:70%; max-width:960px; padding:0px;}
+
+	.path-user #region-main, .path-login #region-main, .path-mod-forum #region-main, .path-badges #region-main,
+	.forumtype-general #region-main {margin-left:auto; margin-right:auto; width:70%; max-width:960px; padding:30px 0px;}
+*/
+/* Seitenanpassung Responsive Desktop */
+@media only screen and (min-width:768px) and (max-width:979px) {
+	.oc-inner-content, .oc-block-inside-content {width:90%;}
+	.path-user #region-main, .path-mod-forum #region-main, .path-badges #region-main,
+	.forumtype-general #region-main {width:80%;}
+	.path-mod-groupselect #region-main {width:80%;}
+	.path-login #region-main {width:90%;}
+	.mooctrailer, .kursinfo-container {width:80%;}
+}
+@media only screen and (max-width:767px){
+	.oc-inner-content, .oc-block-inside-content {width:90%;}
+	.path-user #region-main, .path-mod-forum #region-main, .path-badges #region-main,
+	.forumtype-general #region-main {width:80%;}
+	.path-mod-groupselect #region-main {width:80%;}
+	.path-login #region-main {width:90%;}
+	.mooctrailer, .kursinfo-container {width:90%;}
+}
+@media only screen and (max-device-width:480px){
+	.oc-inner-content, .oc-block-inside-content {width:90%;}
+	.path-user #region-main, .path-mod-forum #region-main, .path-badges #region-main,
+	.forumtype-general #region-main {width:80%;}
+	.path-mod-groupselect #region-main {width:80%;}
+	.path-login #region-main {width:90%;}
+	.mooctrailer {width:100%;}
+	.kursinfo-container {width:90%;}
+}
+@media only screen and (max-width:979px) {
+	.oc-coursequickinfo ul {max-width:90%; width:auto;}
+	.quickinfo {margin-right:10px; padding-left:25px;}
+	.oc-coursequickinfo ul  li{font-size:13px; min-width:55px;}
+}
+
+/* -------------------------- *
+/* Seitenanpassung Tablet */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
+/*	#mooc-course-content-top #mooc-course-video.span7 {width: 80%;}
+	.modtype_label .no-overflow .no-overflow {width: 80%} 
+	.inner_content {width:80%;} */
+	.oc_inner_layout .inner_content {width:90%;}
+	.oc-coursequickinfo ul {max-width:90%; width:auto;}
+	.usermenu {margin-right:65px;}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/*	#mooc-course-content-top #mooc-course-video.span7 {width: 80%;}
+	.modtype_label .no-overflow .no-overflow {width: 80%} 
+	.inner_content {width:80%;} */
+	.oc_inner_layout .inner_content {width: 90%;}
+	.oc-coursequickinfo ul {width:auto; max-width:90%;}
+	.quickinfo {margin-right:10px; padding-left:25px;}
+	.oc-coursequickinfo ul  li{font-size:13px; min-width:55px;}
+	.absatz-info-text.span4 {width:100%; margin-left:0px;}
+	.usermenu {margin-right:65px;}
+}
+
+/* Seitenanpassung Smartphones */
+ @media(max-width:480px){
+	#mooc-course-content-top #mooc-course-video.span7 {width: 80%;}
+	.modtype_label .no-overflow .no-overflow {width: 80%;}
+	#page-course-view-fntabs .weeks .fntopicsoutlineinner ul.section li.modtype_forum .mod-indent, 
+	#page-course-view-fntabs .weeks .fntopicsoutlineinner ul.section li.groupselect .mod-indent{width: 80%;}
+	#page-course-view-fntabs .weeks .fntopicsoutlineinner ul.section li.modtype_resource .mod-indent {width:80%;}
+	.inner_content {width:80%;}
+	.oc_inner_layout .inner_content {width: 90%;}
+}
+ @media(max-width:420px){
+	#mooc-course-content-top #mooc-course-video.span7 {width: 90%;}
+	ul#oc-coursenavlist {width: 100%;}
+	ul#oc-coursenavlist li {width:14%; min-width:45px;}
+ }
+@media(max-device-width:480px){
+    #mooc-course-content-top #mooc-course-video.span7 {width: 100%;}
+	.modtype_label .no-overflow .no-overflow {width: 80%;}
+	#page-course-view-fntabs .weeks .fntopicsoutlineinner ul.section li.modtype_forum .mod-indent,
+	#page-course-view-fntabs .weeks .fntopicsoutlineinner ul.section li.groupselect .mod-indent{width: 80%;}
+	#page-course-view-fntabs .weeks .fntopicsoutlineinner ul.section li.modtype_resource .mod-indent {width:80%;}
+	ul#oc-coursenavlist {width: 96%;}
+	ul#oc-coursenavlist li {width:16%; min-width:45px;}
+  }
+  
+/* Formate fuer zusaetzliche Kurselemente */
+.task-blue {
+    background-color: #30ade7;
+	background: url([[pix:theme|task-img]]) no-repeat scroll 0 0 rgba(48, 173, 231, 1.0);
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: -30px;
+    padding: 15px 20px 15px 80px;
+	min-height:70px;
+}
+.task-blue p {color:#fff; margin:0px;}
+.task-blue li, .task-blue a {color:#fff;}
+.task-blue a {text-decoration:underline;}
+.task-blue a:hover {color:#0070a8;}
+
+.book-grey {
+	background: #efefef url([[pix:theme|book-icon2]]) no-repeat scroll 0 0;  /* rgba(254, 236, 188, 1.0)*/
+    /* color: #fff; */
+    margin-bottom: 20px;
+    /* margin-left: -30px; */
+    padding: 15px 20px 15px 80px;
+	min-height:70px;
+}
+.quest-orange {
+    background-color: #f7941e;
+	background: url([[pix:theme|quest-img]]) no-repeat scroll 0 0 rgba(247, 148, 30, 1.0);
+	background-position:0 3px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: -30px;
+    padding: 15px 20px 15px 80px;
+	min-height:70px;
+}
+.quest-orange p {color:#fff; margin:0px;}
+.quest-orange li, .quest-orange a {color:#fff;}
+.quest-orange a {text-decoration:underline;}
+.quest-orange a:hover {color:#824c11;}
+
+.cal-green {
+    background-color: #8cc63f;
+	background: url([[pix:theme|cal-img]]) no-repeat scroll 0 0 rgba(140, 198, 63, 1.0);
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: -30px;
+    padding: 15px 20px 15px 80px;
+	min-height:70px;
+}
+.cal-green p {color:#fff; margin:0px;}
+.cal-green li, .cal-green a {color:#fff;}
+.cal-green a {text-decoration:underline;}
+.cal-green a:hover {color:#3c7013;}
+
+
+/*
+.book-grey p {color:#fff; margin:0px;}
+.book-grey li, .book-grey a {color:#fff;}
+.book-grey a {text-decoration:underline;}
+.book-grey a:hover {color:#0070a8;}
+ */
+ 
+/* Capira-Anpassung */ /*
+.ng-scope .panel,
+.ng-scope p {
+    font-family: 'Verdana', 'Arial', sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    color: #666666;
+}
+.transparent-button,
+.transparent-textbox,
+.transparentTextbox {
+    background-color: rgba(220, 240, 247, .4);
+}
+.ng-scope .button {
+    background-color: #30ade7;
+    );
+    border: 0px;
+    color: #fff;
+    font-family: 'Verdana', 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+}
+.ng-scope .panel {background-color:rgba(255,255,255,0.9);
+} */
+
+
+/* Media-Queries */ /*
+@media (max-width:767px){
+@media (min-width:481px) and (max-width:767px){
+@media (max-width:767px){
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) 
+and (orientation : portrait) {
+@media (max-width:979px){
+@media(max-width:480px){
+*/
+
+
+
+/*
+@media only screen and ( min-width: 1100px ) and (max-width:1474px){
+	.oc_row {width: 960px;} 
+	.oc_1_3 {width:300px;}
+	.oc_2_3 {width:600px;}
+	.oc_3_3 {width:700px;}
+	.oc_full{width:960px;}
+	.oc_col:last-child {margin-right: 0;}
+}
+@media only screen and ( min-width: 980px ) and ( max-width: 1199px ){ 
+	.oc_row {width: 690px;} 
+	.oc_1_3 {width:210px;}
+	.oc_2_3 {width:420px;}
+} 
+@media only screen and ( min-width: 980px ) and ( max-width: 1199px ){ 
+.oc_row { width: 690px;}
+	.oc_1_3, .oc_2_3 {width:100%; margin-left:auto; margin-right:auto;}
+	.oc_col, .oc_col:last-child {margin-left:auto; margin-right:auto;}
+	.oc_3_3 {width:100%;}
+} 
+
+@media only screen and ( min-width: 768px ) and ( max-width: 979px ) { 
+	.oc_row { width: 520px;}
+	.oc_1_3, .oc_2_3 {width:100%; margin-left:auto; margin-right:auto;}
+	.oc_col, .oc_col:last-child {margin-left:auto; margin-right:auto;}
+	.oc_3_3 {width:100%;}
+}
+@media only screen and ( min-width: 480px ) and ( max-width: 767px ) { 
+	.oc_row { width: 400px;}
+	.oc_1_3, .oc_2_3 {width:100%; margin-left:auto; margin-right:auto;}
+	.oc_col, .oc_col:last-child {margin-left:auto; margin-right:auto;}
+	.oc_3_3 {width:100%;}
+}
+@media only screen and ( max-width: 479px ) { 
+	.oc_row { width: 260px; }
+	.oc_1_3, .oc_2_3 {width:100%; margin-left:auto; margin-right:auto;}
+	.oc_col, .oc_col:last-child {margin-left:auto; margin-right:auto;}
+} */
+
+ 
+/*-------------------------*/
+/*
+a.logo {
+    background: url([[setting:logo]]) no-repeat 0 0;
+    display: block;
+    float: left;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.dir-rtl a.logo {
+    background: url([[setting:logo]]) no-repeat 100% 0;
+    display: block;
+    float: right;
+}
+*/
+
+/* Custom CSS Settings
+-------------------------*/
+/*
+[[setting:customcss]]
+*/
+/* 

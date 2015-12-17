@@ -1,0 +1,61 @@
+mooin - installation/configuration
+
+Moodle:
+- install Moodle 2.8
+
+Plugins:
+- block_online_users_map (https://moodle.org/plugins/block_online_users_map)
+- mod_occapira (https://github.com/oncampus/mooin_mod_occapira https://capira.de/build/client/api/)
+- block_oc_mooc_nav (https://github.com/oncampus/mooin_block_oc_mooc_nav)
+	name=Kapitel 1;lections=6;enabled=true;img=0.png
+	name=Kapitel 2;lections=13;enabled=false;img=1.png
+	name=Kapitel 3;lections=4;enabled=hidden;img=1.png
+- format_fn_tabs (https://github.com/oncampus/mooin_course_format_octabs)
+- theme_mooin (https://github.com/oncampus/mooin_theme_mooin)
+- block_oc_course_footer (!!!!!!!!!!!!!!!!!!github)
+- block_oc_my_courses (!!!!!!!!!!!!!!!!!!github)
+	course description:
+	<a href="https://mooin.oncampus.de/courseinfo.php?courseid=19&pageid=1858">
+		<div class="mooc10 course_box">
+			<div class="upper">Arbeit 4.0</div>
+			<div class="info">
+				 <div class="inner_info">
+					<div class="inf1 inf_line">Frühjahr 2016</div>
+					<div class="inf2 inf_line">Anja C. Wagner</div>
+					<div class="inf3 inf_line">deutsch</div>
+					<div class="inf4 inf_line">7 Tage</div>
+					<div class="inf5 inf_line">kostenlos</div>
+				 </div>
+			</div>
+		</div>
+	</a>
+- auth_googleoauth2 (https://moodle.org/plugins/auth_googleoauth2)
+- enrol_autoenrol (https://moodle.org/plugins/enrol_autoenrol)
+- mod_simplecertificate (https://moodle.org/plugins/mod_simplecertificate)
+
+Files:
+- moodle/courseinfo.php
+
+Moodle configuration:
+- customusermenuitems:
+	editmyprofile,moodle|/user/edit.php|user
+	changepassword,moodle|/login/change_password.php|user
+	mybadges,badges|/badges/mybadges.php|award
+- Zusatzoptionen > Mitteilungssystem (messaging): nein
+- Website-Administration > Plugins > Blöcke > Übersicht: Kursübersicht verbergen
+- Website-Administration > Plugins > Authentifizierung > Übersicht: Selbstregistrierung (registerauth) E-Mail basiert
+- Website-Administration > Sicherheit > Website-Rechte: Anmeldung notwendig (forcelogin) nein
+- ReCaptcha
+	recaptchapublickey:
+    recaptchaprivatekey:
+- Darstellung > Designs > Einstellungen: allowuserblockhiding und allowblockstodock ausschalten
+- Website-Administration > Nutzer/innen > Nutzerkonten > Standardmäßige Nutzereinstellungen: defaultpreference_maildisplay für niemanden sichtbar
+- Website-Administration > Nutzer/innen > Rechte ändern > Nutzereigenschaften > Nutzerfelder verbergen (hiddenuserfields): Meine Kurse
+
+edit roles:
+- Authentifizierter Nutzer: moodle/site:sendmessage (nein)
+- Authentifizierter Nutzer: moodle/my:manageblocks (nein)
+- neue globale Rolle „mooin Kursmanager“ (coursemanager) muss jedem Trainer zugewiesen werden, damit sie im Kurs die Blöcke „Einstellungen“ und „Navigation“ sehen.
+
+
+
